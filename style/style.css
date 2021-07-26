@@ -8,7 +8,7 @@ body{
     text-align: center;
 }
 #navbar, #title{
-    background-color: #23354a;
+    background-color: #1a2a3d;
 }
 /* navbar  */
 #navbar .container{
@@ -20,17 +20,26 @@ body{
     padding: 0% 0 7%;
 }
 .search-sec{
-    background-color: #044d3eb0;
+    background-color: #f2f2f2;
     padding: 2%;
 }
+
 .title-header, .title-p{
-    padding: 7% 3% 2%;
+    padding: 6% 0 3%;
     text-align: center;
     color: #00fcdc;
+}
+.title-header{
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#src{
+    letter-spacing: 35px;
 }
 .title-p{
     font-size: 1.5rem;
     color: #00fcdc;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .title-box{
@@ -42,8 +51,11 @@ body{
 }
 .title-row-img{
     width: 70%;
+    text-align: right;
 }
-
+.btn-success{
+    background-color: #2ea44d;
+}
 /* filter section */
 
 #filter{
