@@ -11,12 +11,24 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 30%;
+    min-width: 30%;
     min-height: 30%;
     background: cornsilk;
     border-radius: 6%;
     padding: 2% 4%;
     box-sizing: border-box;
     box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+}
+@media (max-width:1000px){
+    .contactmeBox{
+        min-width: 40%;
+    }
+}
+@media (max-width:600px) {
+    .contactmeBox{
+        min-width: 50%;
+    }
+    
 }
 .doc{
     margin: 0 auto;
@@ -35,6 +47,15 @@ body{
     cursor: pointer;
     padding: 3%;
     margin-top: 2%;
+}
+
+.contactmeBox a{
+    color: #262626;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    text-align: center;
 }
 
 h3{
@@ -66,7 +87,6 @@ h3{
 .inputBox{
     position: relative;
 }
-
 textarea{
     padding: 5%;
     margin: 0%;
@@ -77,7 +97,6 @@ textarea{
     max-width: 88%;
     height: 150px;
 }
-
 #text-message{
     font-size: 20px;
 }
