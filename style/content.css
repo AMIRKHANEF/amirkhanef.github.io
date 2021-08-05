@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{background-color: #fff;}
+body .nav-search-col{
+    margin: 0;
+    padding: 0%;
+}
+/****************************** navbar section  *******************************/
+#navbar{
+    padding: 0 5%;
+    background-color: burlywood;
+}
+#navbar .navbar{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.search-sec{
+    width: 30%;
+    border: 2px solid brown;
+    border-radius: 50px;
+}
+.searchbox{
+    position: relative;
+    width: 95%;
+    height: 100%;
+    margin-left: 3%;
+    border: none;
+    background-color: transparent;
+}
+input[type=text]:focus{
+    outline: none;
+}
+.search-btn{
+    padding-left: 0%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+}
+
+.nav-logo{
+    width: 4rem;
+}
+
+/****************************************************** content section ****************************/
+
+#content{
+    padding: 2% 10%;
+}
+.content-col1{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.content-col2{
+    padding: 0;
+    margin: 0;
+}
+
+.content-img{
+    position: relative;
+    width: 80%;
+    display: inline;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+.content-detail{
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    text-align: left;
+}
+.content-name{
+    padding: 2% 0 4%;
+    font-size: 2.1rem;
+}
+
+.site-rating-box{
+    position: relative;
+    /* padding-top: 8%; */
+    /* box-sizing: border-box; */
+    width: 30%;
+
+}
+.site-rating{
+    text-align: center;
+    color: rgb(10, 240, 10);
+}
+
+.percent{
+    font-size: 2rem;
+}
+.rate{
+    color: rgb(238, 40, 40);
+    font-size: 4rem;
+    font-weight: 700;
+}
