@@ -28,6 +28,7 @@ body{
 @media (max-width:600px) {
     .contactmeBox{
         min-width: 65%;
+        margin: 3% auto;
     }
     
 }
