@@ -6,10 +6,11 @@ body{
 }
 
 .contactmeBox{
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    margin: 1% auto;
     width: 30%;
     min-width: 30%;
     min-height: 30%;
@@ -21,12 +22,12 @@ body{
 }
 @media (max-width:1000px){
     .contactmeBox{
-        min-width: 40%;
+        min-width: 45%;
     }
 }
 @media (max-width:600px) {
     .contactmeBox{
-        min-width: 50%;
+        min-width: 65%;
     }
     
 }
