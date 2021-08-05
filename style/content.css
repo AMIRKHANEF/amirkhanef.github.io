@@ -10,7 +10,6 @@ body .nav-search-col{
 /****************************** navbar section  *******************************/
 #navbar{
     padding: 0 5%;
-    background-color: burlywood;
 }
 #navbar .navbar{
     display: inline-flex;
@@ -96,4 +95,11 @@ input[type=text]:focus{
     color: rgb(238, 40, 40);
     font-size: 4rem;
     font-weight: 700;
+}
+
+
+/************************************** tabs section ***********************************/
+
+.nav-tabs{
+    justify-content: center;
 }
