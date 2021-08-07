@@ -1,105 +1,192 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{background-color: #fff;}
-body .nav-search-col{
-    margin: 0;
-    padding: 0%;
+body {
+  background-color: #fff;
+}
+body .nav-search-col {
+  margin: 0;
+  padding: 0%;
 }
 /****************************** navbar section  *******************************/
-#navbar{
-    padding: 0 5%;
+#navbar {
+  padding: 0 5%;
+  background-color: tomato;
 }
-#navbar .navbar{
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
+#navbar .navbar {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
 }
-.search-sec{
-    width: 30%;
-    border: 2px solid brown;
-    border-radius: 50px;
+.search-sec {
+  width: 30%;
+  border: 2px solid brown;
+  border-radius: 50px;
 }
-.searchbox{
-    position: relative;
-    width: 95%;
-    height: 100%;
-    margin-left: 3%;
-    border: none;
-    background-color: transparent;
+.searchbox {
+  position: relative;
+  width: 95%;
+  height: 100%;
+  margin-left: 3%;
+  border: none;
+  background-color: transparent;
 }
-input[type=text]:focus{
-    outline: none;
+input[type="text"]:focus {
+  outline: none;
 }
-.search-btn{
-    padding-left: 0%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.3rem;
+.search-btn {
+  padding-left: 0%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.3rem;
 }
 
-.nav-logo{
-    width: 4rem;
+.nav-logo {
+  width: 4rem;
 }
 
 /****************************************************** content section ****************************/
 
-#content{
-    padding: 2% 10%;
+#content {
+  padding: 2% 10%;
 }
-.content-col1{
-    padding: 0;
-    margin: 0;
-    text-align: center;
+.content-col1 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
-.content-col2{
-    padding: 0;
-    margin: 0;
-}
-
-.content-img{
-    position: relative;
-    width: 80%;
-    display: inline;
-    border: 2px solid black;
-    border-radius: 30px;
-}
-.content-detail{
-    position: relative;
-    display: inline-block;
-    width: 90%;
-    text-align: left;
-}
-.content-name{
-    padding: 2% 0 4%;
-    font-size: 2.1rem;
+.content-col2 {
+  padding: 0;
+  margin: 0;
 }
 
-.site-rating-box{
-    position: relative;
-    /* padding-top: 8%; */
-    /* box-sizing: border-box; */
-    width: 30%;
-
+.content-img {
+  position: relative;
+  width: 80%;
+  display: inline;
+  border: 2px solid black;
+  border-radius: 30px;
 }
-.site-rating{
-    text-align: center;
-    color: rgb(10, 240, 10);
+.content-detail {
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  text-align: left;
 }
-
-.percent{
-    font-size: 2rem;
-}
-.rate{
-    color: rgb(238, 40, 40);
-    font-size: 4rem;
-    font-weight: 700;
+.content-name {
+  padding: 2% 0 4%;
+  font-size: 2.1rem;
 }
 
+.site-rating-box {
+  position: relative;
+  /* padding-top: 8%; */
+  /* box-sizing: border-box; */
+  width: 30%;
+}
+.site-rating {
+  text-align: center;
+  color: rgb(10, 240, 10);
+}
+
+.percent {
+  font-size: 2rem;
+}
+.rate {
+  color: rgb(238, 40, 40);
+  font-size: 4rem;
+  font-weight: 700;
+}
 
 /************************************** tabs section ***********************************/
 
-.nav-tabs{
-    justify-content: center;
+.nav-tabs {
+  justify-content: center;
+  margin: 5% auto;
+}
+/****************** tab1 content **************/
+.carousel {
+  position: relative;
+  width: 50%;
+  margin: 2% auto;
+}
+.carousel-imgs {
+  position: relative;
+  width: 100%;
+}
+.overview-detail {
+  padding: 0 5%;
+}
+
+/******************************************** footer section **************************/
+
+#footer {
+  background-color: #000;
+  text-align: center;
+}
+#footer .row{
+    margin: 0%;
+}
+.aboutus {
+  position: relative;
+  background: red;
+  width: 70%;
+  /* padding: 3% 7%; */
+  text-align: left;
+  font-family: "Merriweather", serif;
+}
+.aboutus h4 {
+  color: #fff;
+  padding: 7% 3% 1%;
+}
+.aboutus p {
+  color: #fff;
+  padding: 0 5% 5%;
+}
+
+.social-item {
+  padding: 0 1%;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.details {
+  padding: 7%;
+}
+
+.proxmail {
+  color: #fff;
+  font-size: 1.3rem;
+}
+.details span {
+  color: #a7a5a5;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.details p {
+  color: aliceblue;
+  font-size: 1rem;
+  padding: 1%;
+}
+.footer-nav {
+  padding-bottom: 1%;
+}
+.footer-nav a {
+  color: rgb(180, 176, 176);
+  margin: 0% 5% 3%;
+}
+
+#copyright {
+  background-color: rgb(24, 23, 23);
+  margin: 0;
+  padding-top: 0;
+}
+#copyright a {
+  color: #8eb12f;
+}
+@media (max-width: 993px) {
+  .aboutus {
+    margin: auto;
+  }
 }
