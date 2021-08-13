@@ -1,7 +1,6 @@
 body {
   padding: 0%;
   margin: 0%;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -18,6 +17,7 @@ body .row{
 #navbar {
   padding: 0 10%;
   background-color: #d1ccdc;
+  font-family: 'STIX Two Text', serif;
 }
 
 .nav-logo {
@@ -38,6 +38,8 @@ body .row{
 /************************************** title ********************************/
 #title {
   background-color: #ffffff;
+  font-family: 'STIX Two Text', serif;
+
 }
 
 #title .container {
@@ -53,7 +55,7 @@ body .row{
 
 .title-header {
   font-size: 3rem;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
 }
 
 #src {
@@ -110,10 +112,18 @@ body .row{
   padding: 2% 0;
   background-color: #ffffff;
   margin: 0;
+  font-family: 'Anton', sans-serif;
+
 }
 
 #filter .row{
   justify-content: center;
+}
+
+.filimg{
+  position: relative;
+  width: 100%;
+
 }
 
 .filter-item1{
@@ -123,7 +133,6 @@ body .row{
   height: 180px;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(../imgs/socialmedia.jpg);
   background-size: cover;
-  /* position: relative; */
   z-index: 0;
   box-shadow: 5px 5px 25px #a7a5a5, 5px 5px 25px #a7a5a5;
 }
@@ -134,7 +143,6 @@ body .row{
   height: 180px;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(../imgs/services.jpg);
   background-size: cover;
-  /* position: relative; */
   z-index: 0;
   box-shadow: 5px 5px 25px #a7a5a5, 5px 5px 25px #a7a5a5;
 }
@@ -145,7 +153,6 @@ body .row{
   height: 180px;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(../imgs/material.jpg);
   background-size: cover;
-  /* position: relative; */
   z-index: 0;
   box-shadow: 5px 5px 25px #a7a5a5, 5px 5px 25px #a7a5a5;
 }
@@ -154,7 +161,7 @@ body .row{
   border-radius: 10%;
   width: 100%;
   height: 180px;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(../imgs/apps.jpg);
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(../imgs/LOCATION.jpg);
   background-size: cover;
   /* position: relative; */
   z-index: 0;
@@ -173,10 +180,10 @@ body .row{
 }
 
 .filter-name {
-  position: absolute;
   /* padding-top: 35%; */
   /* text-align: center; */
-  color: #fff;
+  color: rgb(255, 255, 255);
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -193,6 +200,7 @@ body .row{
 #offer{
   background-color: #ffffff;
   text-align: center;
+  font-family: 'Merriweather', serif;
 }
 
 .row-cols{
@@ -220,6 +228,7 @@ body .row{
   width: 70%;
   /* padding: 3% 7%; */
   text-align: left;
+  font-family: 'Merriweather', serif;
 }
 .aboutus h4{
   color: #fff;
