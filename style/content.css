@@ -23,6 +23,7 @@ body .nav-search-col {
   width: 30%;
   border: 2px solid brown;
   border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.747);
 }
 .searchbox {
   position: relative;
@@ -43,7 +44,7 @@ input[type="text"]:focus {
 }
 
 .nav-logo {
-  width: 4rem;
+  width: 3.5rem;
 }
 
 /****************************************************** content section ****************************/
@@ -87,14 +88,15 @@ input[type="text"]:focus {
 }
 .site-rating {
   text-align: center;
-  color: rgb(10, 240, 10);
+  color: rgb(1, 19, 1);
 }
 
 .percent {
   font-size: 2rem;
+  font-weight: 600;
 }
 .rate {
-  color: rgb(238, 40, 40);
+  color: rgb(97, 37, 37);
   font-size: 4rem;
   font-weight: 700;
 }
@@ -111,18 +113,61 @@ input[type="text"]:focus {
   width: 50%;
   margin: 2% auto;
 }
+.carousel-control-next, .carousel-control-prev{
+    width: 7%;
+    top: 40%;
+    bottom: 40%;
+}
+.carousel-control-next:hover, .carousel-control-prev:hover{
+  background-color: rgba(0, 0, 0, 0.486);
+}
 .carousel-imgs {
   position: relative;
   width: 100%;
+}
+.carousel-item-vid{
+    width: 100%;
+    height: 430px;
 }
 .overview-detail {
   padding: 0 5%;
 }
 
+/****************** tab2 content *****************/
+.table-tab{
+    position: relative;
+    width: 65%;
+    margin: auto;
+}
+.table{
+    position: relative;
+    display: inline-table;
+}
+.first-tb-item{
+    font-size: 1rem;
+    font-weight: 700;
+    width: 25%;
+}
+.fard{
+    background-color: rgb(252, 249, 249);
+}
+.zoj{
+    background-color: rgb(243, 241, 241);
+}
+.second-tb-item{
+    font-size: 1rem;
+    font-weight: 500;
+}
+td{
+    border: 4px solid #fff;
+}
+td, th{
+    border-top: none;
+}
 /******************************************** footer section **************************/
 
 #footer {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.880);
   text-align: center;
 }
 #footer .row{
@@ -144,11 +189,19 @@ input[type="text"]:focus {
   color: #fff;
   padding: 0 5% 5%;
 }
-
+.num-social{
+    padding-right: 3%;
+    font-size: 1.8rem;
+    color: #fff;
+    padding-top: 2%;
+}
+.socialmedias{
+    padding-top: 2%;
+}
 .social-item {
   padding: 0 1%;
   color: #ffffff;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .details {
@@ -169,6 +222,7 @@ input[type="text"]:focus {
   font-size: 1rem;
   padding: 1%;
 }
+
 .footer-nav {
   padding-bottom: 1%;
 }
