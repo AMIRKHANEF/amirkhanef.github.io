@@ -196,8 +196,7 @@ input[type="text"]:focus {
 }
 
 .star-icon label:active {
-  transform: scale(0.8);
-  transition: 0.3s ease;
+  transform: scale(1.2);
 }
 
 .silde-rating{
