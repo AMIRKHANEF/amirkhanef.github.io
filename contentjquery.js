@@ -1,8 +1,8 @@
 ///////////////// tabs //////////////
-$(".tab-item").click(function (event) {
+$(".tab-secteor").click(function (event) {
     var tabId = event.target.id;
     $("#carousel-vid").attr('src', $('iframe').attr('src'));
-    $(".tab-item").removeClass("active");
+    $(".tab-secteor").removeClass("active");
     $("#" + tabId).addClass("active");
     $(".tabs-contents").css("opacity", 0);
     $(".tabs-contents").removeClass("show active");
