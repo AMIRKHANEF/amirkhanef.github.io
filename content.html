@@ -49,26 +49,64 @@
     <!----------------------------------- navbar section  -------------------------------->
     <section id="navbar">
       <nav class="navbar navbar-expand-lg">
-        <a href="#" class="navbar-brand"
+        <a href="index.html" class="navbar-brand"
           ><img class="nav-logo" src="imgs/logo.png" alt="proxador.com" />
           Proxador</a
         >
-        <div class=" search-sec">
-          <div class=" nav-search-col">
+        <div class="search-sec">
+          <div class="nav-search-col">
             <input type="text" class="searchbox" placeholder="Search here" />
           </div>
-          <div class=" nav-search-col">
+          <div class="nav-search-col">
             <button type="button" class="search-btn">
               <i class="fas fa-search"></i>
             </button>
           </div>
         </div>
-        <div class="">
-          <ul class="nav-col navbar-nav ">
+        <div class="navbar-expand-sm">
+          <ul class="nav-col navbar-nav">
             <li class="nav-link"><a href="index.html">Home</a></li>
             <li class="nav-link"><a href="contactme.html">Contact</a></li>
             <li class="nav-link"><a href="SignIn.html">Sign In</a></li>
+            <li class="nav-link"><div class="menu" onclick="myFunction(this)">
+              <div class="menup">
+                <p class="bar1"></p>
+                <p class="bar2"></p>
+                <p class="bar3"></p>
+              </div></div></li>
           </ul>
+        </div>
+          <!-- <div class="menu-items">
+            <div class="menu-search-item">
+            <div class="nav-search-col">
+              <input type="text" class="searchbox" placeholder="Search here" />
+            </div>
+            <div class="nav-search-col">
+              <button type="button" class="search-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+            <input class="dropdown-search" type="checkbox" id="dropdown-search" name="dropdown-search"/>
+		  	    <label class="for-dropdown-search" for="dropdown-search">Search By <i class="fas fa-plus"></i></label>
+            <div class="section-dropdown-search"> 
+              <a href="#">Website <i class="fas fa-arrow-right"></i></a>
+              <a href="#">App <i class="fas fa-arrow-right"></i></a>
+              <a href="#">Social Media <i class="fas fa-arrow-right"></i></a>
+              <a href="#">Services <i class="fas fa-arrow-right"></i></a>
+              <a href="#">Locale <i class="fas fa-arrow-right"></i></a>
+              <a href="#">Sell & Buy <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <input class="dropdown-top" type="checkbox" id="dropdown-top" name="dropdown-top"/>
+		  	    <label class="for-dropdown-top" for="dropdown-top">Top <i class="fas fa-plus"></i></label>
+            <div class="section-dropdown-top"> 
+              <a href="#">Top Rate <i class="fas fa-arrow-right"></i></a>
+              <a href="#">Top Account <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <a href="#">Explore</a>
+            <a href="#">Sign In</a>
+            <a href="#">Contact Us</a>
+          </div> -->
         </div>
       </nav>
     </section>
@@ -77,34 +115,34 @@
     <section id="content">
       <div class="content">
         <div class="row">
-          <div class="col-xl-3 col-md-12 content-col1">
-            <img
-              class="content-img"
-              src="imgs/proxador-logo.png"
-              alt="proxador.com"
-            />
-          </div>
-
-          <div class="col-xl-6 col-md-8 content-col2">
-            <div class="content-detail">
-              <div class="content-details">
-                <a
-                  class="content-name"
-                  href="http://www.proxador.com"
-                  target="_blank"
-                  >Proxador.com</a
-                >
-                <h5 class="content-description">
-                  the website which reference you to other websites!
-                </h5>
-                <a href="#">#Website</a>
-              </div>
+          <div class="col-xl-9 col-md-8 row">
+            <div class="col-xl-4 col-md-12 content-col1">
+              <img
+                class="content-img"
+                src="imgs/proxador-logo.png"
+                alt="proxador.com"
+              />
             </div>
+            <div class="col-xl-8 col-md-12 content-col2">
+              <div class="content-detail">
+                <div class="content-details">
+                  <a
+                    class="content-name"
+                    href="http://www.proxador.com"
+                    target="_blank"
+                    >Proxador.com</a
+                  >
+                  <h5 class="content-description">
+                    the website which reference you to other websites!
+                  </h5>
+                  <a href="#">#Website</a>
+                </div>
+              </div>
 
               <div class="site-rating">
                 <p class="rate">85<span class="percent"> / 100</span></p>
               </div>
-
+            </div>
           </div>
 
           <div class="col-xl-3 col-md-4 content-col3">
@@ -137,7 +175,7 @@
               <div class="silde-rating">
                 <h5>Professional rate</h5>
                 <div class="row">
-                  <span class="col-sm-3 ">Interface</span>
+                  <span class="col-sm-3">Interface</span>
                   <input
                     class="slider-range col-sm-8 first-slider"
                     type="range"
@@ -145,44 +183,51 @@
                     min="0"
                     max="20"
                   />
-                  <span class="slider-value col-sm-1 first-slider-value">0</span>
+                  <span class="slider-value col-sm-1 first-slider-value"
+                    >0</span
+                  >
                 </div>
-                
+
                 <div class="row">
                   <span class="col-sm-3">Content</span>
                   <input
-                  class="slider-range col-sm-8 second-slider"
-                  type="range"
-                  value="0"
-                  min="0"
-                  max="40"
+                    class="slider-range col-sm-8 second-slider"
+                    type="range"
+                    value="0"
+                    min="0"
+                    max="40"
                   />
-                  <span class="slider-value col-sm-1 second-slider-value">0</span>
+                  <span class="slider-value col-sm-1 second-slider-value"
+                    >0</span
+                  >
                 </div>
                 <div class="row">
                   <span class="col-sm-3">Usefully</span>
                   <input
-                  class="slider-range col-sm-8 third-slider"
-                  type="range"
-                  value="0"
-                  min="0"
-                  max="30"
+                    class="slider-range col-sm-8 third-slider"
+                    type="range"
+                    value="0"
+                    min="0"
+                    max="30"
                   />
-                  <span class="slider-value col-sm-1 third-slider-value">0</span>
+                  <span class="slider-value col-sm-1 third-slider-value"
+                    >0</span
+                  >
                 </div>
                 <div class="row">
                   <span class="col-sm-3">Security</span>
                   <input
-                  class="slider-range col-sm-8 fourth-slider"
-                  type="range"
-                  value="0"
-                  min="0"
-                  max="10"
+                    class="slider-range col-sm-8 fourth-slider"
+                    type="range"
+                    value="0"
+                    min="0"
+                    max="10"
                   />
-                  <span class="slider-value col-sm-1 fourth-slider-value">0</span>
+                  <span class="slider-value col-sm-1 fourth-slider-value"
+                    >0</span
+                  >
                 </div>
-                
-                
+
                 <div class="rating-btn">
                   <span class="high-rate">😍</span>
                   <span class="total-value">0</span>
@@ -199,10 +244,10 @@
     <section id="tabs">
       <div class="tabs">
         <!-- Tabs navs -->
-        <ul class="nav nav-tabs" id="ex1" role="tablist">
-          <li class="nav-item" role="presentation">
+        <div class="tabs-items" id="ex1" role="tablist">
+          <!-- <div class="tab-items" role="presentation"> -->
             <a
-              class="nav-link tab-item active"
+              class="tab-secteor active"
               id="tab-1"
               data-mdb-toggle="tab"
               href="#!"
@@ -212,11 +257,11 @@
             >
               Overview
             </a>
-          </li>
+          <!-- </div> -->
 
-          <li class="nav-item" role="presentation">
+          <!-- <div class="tab-items" role="presentation"> -->
             <a
-              class="nav-link tab-item"
+              class="tab-secteor"
               id="tab-2"
               data-mdb-toggle="tab"
               href="#!"
@@ -226,11 +271,11 @@
             >
               Further Details
             </a>
-          </li>
+          <!-- </div> -->
 
-          <li class="nav-item" role="presentation">
+          <!-- <div class="tab-items" role="presentation"> -->
             <a
-              class="nav-link tab-item"
+              class="tab-secteor"
               id="tab-3"
               data-mdb-toggle="tab"
               href="#!"
@@ -240,11 +285,11 @@
             >
               User Comments
             </a>
-          </li>
+          <!-- </div> -->
 
-          <li class="nav-item" role="presentation">
+          <!-- <div class="tab-items" role="presentation"> -->
             <a
-              class="nav-link tab-item"
+              class="tab-secteor"
               id="tab-4"
               data-mdb-toggle="tab"
               href="#!"
@@ -254,11 +299,11 @@
             >
               Related
             </a>
-          </li>
+          <!-- </div> -->
 
-          <li class="nav-item" role="presentation">
+          <!-- <div class="tab-items" role="presentation"> -->
             <a
-              class="nav-link tab-item"
+              class="tab-secteor"
               id="tab-5"
               data-mdb-toggle="tab"
               href="#!"
@@ -268,8 +313,8 @@
             >
               Privacy
             </a>
-          </li>
-        </ul>
+          </div>
+        <!-- </div> -->
         <!-- Tabs navs -->
 
         <div class="tabs-content">
@@ -455,7 +500,7 @@
     <section id="footer">
       <div class="footer">
         <div class="row">
-          <div class="col-lg-6 colmd-6 ">
+          <div class="col-lg-6 colmd-6">
             <div class="details">
               <span>Email:</span>
               <a class="proxmail" href="mailto:info@proxador.com"
@@ -514,7 +559,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 colmd-6  col2">
+          <div class="col-lg-6 colmd-6 col2">
             <div class="aboutus">
               <h4>ABOUT US:</h4>
               <p>
@@ -544,5 +589,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- <script src="content.js"></script> -->
     <script src="contentjquery.js"></script>
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
   </body>
 </html>
