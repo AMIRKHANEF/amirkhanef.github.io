@@ -68,45 +68,62 @@
             <li class="nav-link"><a href="index.html">Home</a></li>
             <li class="nav-link"><a href="contactme.html">Contact</a></li>
             <li class="nav-link"><a href="SignIn.html">Sign In</a></li>
-            <li class="nav-link"><div class="menu" onclick="myFunction(this)">
-              <div class="menup">
-                <p class="bar1"></p>
-                <p class="bar2"></p>
-                <p class="bar3"></p>
-              </div></div></li>
+            <li class="nav-link" id="menu">
+              <div class="menu">
+                <div class="menup">
+                  <p class="bar1"></p>
+                  <p class="bar2"></p>
+                  <p class="bar3"></p>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
-          <!-- <div class="menu-items">
-            <div class="menu-search-item">
-            <div class="nav-search-col">
-              <input type="text" class="searchbox" placeholder="Search here" />
-            </div>
-            <div class="nav-search-col">
-              <button type="button" class="search-btn">
-                <i class="fas fa-search"></i>
-              </button>
-            </div>
+        <div class="menu-items">
+          <div class="menu-search-item menu-item">
+            <input type="text" class="searchbox" placeholder="Search here" />
+            <button type="button" class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
           </div>
-            <input class="dropdown-search" type="checkbox" id="dropdown-search" name="dropdown-search"/>
-		  	    <label class="for-dropdown-search" for="dropdown-search">Search By <i class="fas fa-plus"></i></label>
-            <div class="section-dropdown-search"> 
-              <a href="#">Website <i class="fas fa-arrow-right"></i></a>
-              <a href="#">App <i class="fas fa-arrow-right"></i></a>
-              <a href="#">Social Media <i class="fas fa-arrow-right"></i></a>
-              <a href="#">Services <i class="fas fa-arrow-right"></i></a>
-              <a href="#">Locale <i class="fas fa-arrow-right"></i></a>
-              <a href="#">Sell & Buy <i class="fas fa-arrow-right"></i></a>
+          <a href="#" class="menu-item search-drop">Search By</a>
+          <div class="section-dropdown-search">
+            <div class="section-dropdown-search-item">
+              <input type="checkbox" />
+              <span>Website</span><i class="fas fa-check"></i>
             </div>
-            <input class="dropdown-top" type="checkbox" id="dropdown-top" name="dropdown-top"/>
-		  	    <label class="for-dropdown-top" for="dropdown-top">Top <i class="fas fa-plus"></i></label>
-            <div class="section-dropdown-top"> 
-              <a href="#">Top Rate <i class="fas fa-arrow-right"></i></a>
-              <a href="#">Top Account <i class="fas fa-arrow-right"></i></a>
+            <div class="section-dropdown-search-item">
+              <input type="checkbox" />
+              <span>Social Media</span><i class="fas fa-check"></i>
             </div>
-            <a href="#">Explore</a>
-            <a href="#">Sign In</a>
-            <a href="#">Contact Us</a>
-          </div> -->
+            <div class="section-dropdown-search-item">
+              <input type="checkbox" />
+              <span>App</span><i class="fas fa-check"></i>
+            </div>
+            <div class="section-dropdown-search-item">
+              <input type="checkbox" />
+              <span>Services</span><i class="fas fa-check"></i>
+            </div>
+            <div class="section-dropdown-search-item">
+              <input type="checkbox" />
+              <span>Locale</span><i class="fas fa-check"></i>
+            </div>
+            <div class="section-dropdown-search-item">
+              <input type="checkbox" />
+              <span>Sell & Buy</span><i class="fas fa-check"></i>
+            </div>
+            <button class="menu-search-btn section-dropdown-search-item">
+              Go
+            </button>
+          </div>
+          <a href="#" class="menu-item top-drop">Top</a>
+          <div class="section-dropdown-top">
+            <a href="#">Top Rate</a>
+            <a href="#">Top Account</a>
+          </div>
+          <a href="#" class="menu-item">Explore</a>
+          <a href="SignIn.html" class="menu-item">Sign In</a>
+          <a href="contactme.html" class="menu-item">Contact Us</a>
         </div>
       </nav>
     </section>
@@ -246,74 +263,74 @@
         <!-- Tabs navs -->
         <div class="tabs-items" id="ex1" role="tablist">
           <!-- <div class="tab-items" role="presentation"> -->
-            <a
-              class="tab-secteor active"
-              id="tab-1"
-              data-mdb-toggle="tab"
-              href="#!"
-              role="tab"
-              aria-controls="ex1-tabs-1"
-              aria-selected="true"
-            >
-              Overview
-            </a>
+          <a
+            class="tab-secteor active"
+            id="tab-1"
+            data-mdb-toggle="tab"
+            href="#!"
+            role="tab"
+            aria-controls="ex1-tabs-1"
+            aria-selected="true"
+          >
+            Overview
+          </a>
           <!-- </div> -->
 
           <!-- <div class="tab-items" role="presentation"> -->
-            <a
-              class="tab-secteor"
-              id="tab-2"
-              data-mdb-toggle="tab"
-              href="#!"
-              role="tab"
-              aria-controls="ex1-tabs-2"
-              aria-selected="false"
-            >
-              Further Details
-            </a>
+          <a
+            class="tab-secteor"
+            id="tab-2"
+            data-mdb-toggle="tab"
+            href="#!"
+            role="tab"
+            aria-controls="ex1-tabs-2"
+            aria-selected="false"
+          >
+            Further Details
+          </a>
           <!-- </div> -->
 
           <!-- <div class="tab-items" role="presentation"> -->
-            <a
-              class="tab-secteor"
-              id="tab-3"
-              data-mdb-toggle="tab"
-              href="#!"
-              role="tab"
-              aria-controls="ex1-tabs-3"
-              aria-selected="false"
-            >
-              User Comments
-            </a>
+          <a
+            class="tab-secteor"
+            id="tab-3"
+            data-mdb-toggle="tab"
+            href="#!"
+            role="tab"
+            aria-controls="ex1-tabs-3"
+            aria-selected="false"
+          >
+            User Comments
+          </a>
           <!-- </div> -->
 
           <!-- <div class="tab-items" role="presentation"> -->
-            <a
-              class="tab-secteor"
-              id="tab-4"
-              data-mdb-toggle="tab"
-              href="#!"
-              role="tab"
-              aria-controls="ex1-tabs-4"
-              aria-selected="false"
-            >
-              Related
-            </a>
+          <a
+            class="tab-secteor"
+            id="tab-4"
+            data-mdb-toggle="tab"
+            href="#!"
+            role="tab"
+            aria-controls="ex1-tabs-4"
+            aria-selected="false"
+          >
+            Related
+          </a>
           <!-- </div> -->
 
           <!-- <div class="tab-items" role="presentation"> -->
-            <a
-              class="tab-secteor"
-              id="tab-5"
-              data-mdb-toggle="tab"
-              href="#!"
-              role="tab"
-              aria-controls="ex1-tabs-5"
-              aria-selected="false"
-            >
-              Privacy
-            </a>
-          </div>
+          <a
+            class="tab-secteor"
+            id="tab-5"
+            data-mdb-toggle="tab"
+            href="#!"
+            role="tab"
+            aria-controls="ex1-tabs-5"
+            aria-selected="false"
+          >
+            Privacy
+          </a>
+        </div>
         <!-- </div> -->
         <!-- Tabs navs -->
 
@@ -589,10 +606,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- <script src="content.js"></script> -->
     <script src="contentjquery.js"></script>
-    <script>
-      function myFunction(x) {
-        x.classList.toggle("change");
-      }
-    </script>
   </body>
 </html>

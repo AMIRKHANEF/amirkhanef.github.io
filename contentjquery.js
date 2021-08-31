@@ -1,3 +1,18 @@
+//////////////// menu /////////////////////
+$('li#menu').click(function(){
+    $('.menu').toggleClass("change");
+    $('.menu-items').toggleClass("change");
+    $('.section-dropdown-search').removeClass('show');
+    $('.section-dropdown-top').removeClass('show');
+});
+$('.search-drop').click(function(){
+    $('.section-dropdown-search').toggleClass('show');
+});
+$('.top-drop').click(function(){
+    $('.section-dropdown-top').toggleClass('show');
+});
+
+
 ///////////////// tabs //////////////
 $(".tab-secteor").click(function (event) {
     var tabId = event.target.id;
@@ -14,7 +29,6 @@ $(".tab-secteor").click(function (event) {
 
 ///////////////// carousel ////////////////
 $(".carousel-nav").click(function () {
-    console.log("saf");
     $("#carousel-vid").attr('src', $('iframe').attr('src'));
 });
 
