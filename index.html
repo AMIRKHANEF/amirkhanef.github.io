@@ -9,39 +9,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROXADOR</title>
-    <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/bootstrap.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <link rel="icon" type="image/png" href="imgs/logo.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
     <!-------------------------------- navigation bar section  ------------------------>
     <section id="navbar">
-      <div>
-        <nav class="navbar navbar-expand-lg navbar-dark nav-font">
-          <a class="navbar-brand" href="#"
-            ><img
-              class="nav-logo"
-              src="imgs/logo.png"
-              alt="proxador.com proxador"
-            />
-            Proxador</a
-          >
-          <div class="nav-page">
-            <ul class="nav-col navbar-nav">
-              <li class="">
-                <a class="navbar-link" href="contactme.html">Contact</a>
-              </li>
-              <li class="">
-                <a class="navbar-link" href="SignIn.html">Sign in</a>
-              </li>
-            </ul>
+      <nav class="navbar navbar-expand-lg">
+        <a href="index.html" class="navbar-brand"
+          ><img class="nav-logo" src="imgs/logo.png" alt="proxador.com" />
+          Proxador</a
+        >
+        <div class="navbar-expand-sm">
+          <ul class="nav-col navbar-nav">
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="contactme.html">Contact</a></li>
+            <li class="nav-link"><a href="SignIn.html">Sign In</a></li>
+            <li class="nav-link" id="menu">
+              <div class="menu">
+                <div class="menup">
+                  <p class="bar1"></p>
+                  <p class="bar2"></p>
+                  <p class="bar3"></p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-items">
+          <div class="menu-search-item menu-item">
+            <input type="text" class="searchbox" placeholder="Search here" />
+            <button type="button" class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
           </div>
-        </nav>
-      </div>
+          <a href="#" class="menu-item search-drop">Search By</a>
+          <div class="section-dropdown-search">
+            <div class="section-dropdown-search-item">
+              <input type="checkbox" />
+              <span>Website</span><i class="fas fa-check"></i>
+            </div>
+            <div class="section-dropdown-search-item">
+              <input type="checkbox" />
+              <span>Social Media</span><i class="fas fa-check"></i>
+            </div>
+            <div class="section-dropdown-search-item">
+              <input type="checkbox" />
+              <span>App</span><i class="fas fa-check"></i>
+            </div>
+            <div class="section-dropdown-search-item">
+              <input type="checkbox" />
+              <span>Services</span><i class="fas fa-check"></i>
+            </div>
+            <div class="section-dropdown-search-item">
+              <input type="checkbox" />
+              <span>Locale</span><i class="fas fa-check"></i>
+            </div>
+            <div class="section-dropdown-search-item">
+              <input type="checkbox" />
+              <span>Sell & Buy</span><i class="fas fa-check"></i>
+            </div>
+            <button class="menu-search-btn section-dropdown-search-item">
+              Go
+            </button>
+          </div>
+          <a href="#" class="menu-item top-drop">Top</a>
+          <div class="section-dropdown-top">
+            <a href="#">Top Rate</a>
+            <a href="#">Top Account</a>
+          </div>
+          <a href="content.html" class="menu-item">Explore</a>
+          <a href="SignIn.html" class="menu-item">Sign In</a>
+          <a href="contactme.html" class="menu-item">Contact Us</a>
+        </div>
+      </nav>
     </section>
 
     <!--------------------------------- Title section -------------------------------->
@@ -56,48 +126,51 @@
               We are here to introduce you the best references!
             </p>
           </div>
-          <div class="col-md-6 title-row-img">
+          <div class="col-md-6 title-row-imgs">
             <img
               class="title-row-img"
               src="imgs/proxador-logo.png"
-              alt="proxadoooooooor"
+              alt="proxador"
             />
           </div>
         </div>
-        <div class="search-sec rounded">
-          <form action="#" method="post" novalidate="novalidate">
-            <div class="row">
-              <div class="col-lg-6 col-md-4 col-sm-12">
-                <input
-                  type="text"
-                  class="form-control search-slt rounded"
-                  placeholder="what are you looking for?"
-                />
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-12">
-                <select
-                  class="form-control search-slt rounded"
-                  id="exampleFormControlSelect1"
-                >
-                  <option>Select Country</option>
-                  <option>Iran</option>
-                  <option>USA</option>
-                  <option>China</option>
-                  <option>India</option>
-                  <option>Africa</option>
-                  <option>Germany</option>
-                </select>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-12">
-                <button
-                  type="button"
-                  class="btn wrn-btn btn-success rounded search-btn"
-                >
-                  Search
-                </button>
-              </div>
+        <div class="main-search-section">
+          <div class="search-and-search-btn">
+            <input type="text" class="main-search-text" placeholder="What are you looking for?">
+            <button type="button" class="main-search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="search-filters">
+            <div class="search-filter-item" id="free">
+              <input type="checkbox" class="free">
+              <span>Free</span>
             </div>
-          </form>
+            <div class="search-filter-item" id="Pree">
+              <input type="checkbox" class="Pree">
+              <span>Pree</span>
+            </div>
+            <div class="search-filter-item" id="Tree">
+              <input type="checkbox" class="Tree">
+              <span>Tree</span>
+            </div>
+            <div class="search-filter-item" id="Sree">
+              <input type="checkbox" class="Sree">
+              <span>Sree</span>
+            </div>
+            <div class="search-filter-item" id="Lree">
+              <input type="checkbox" class="Lree">
+              <span>Lree</span>
+            </div>
+            <div class="search-filter-item" id="Gree">
+              <input type="checkbox" class="Gree">
+              <span>Gree</span>
+            </div>
+            <div class="search-filter-item" id="Dree">
+              <input type="checkbox" class="Dree">
+              <span>Dree</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -105,37 +178,38 @@
     <!------------------------------------ filter section ----------------------------->
     <section id="filter">
       <div class="row">
-        <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2">
+        <a class="col-sm-6 col-md-4 col-lg-3 col-xl-2" href="#">
           <div class="filter-item1">
             <h3 class="filter-name">SOCIALMEDIA</h3>
           </div>
-        </div>
+        </a>
 
-        <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2">
+        <a class="col-sm-6 col-md-4 col-lg-3 col-xl-2" href="#">
           <div class="filter-item2">
             <h3 class="filter-name">SERVICES</h3>
           </div>
-        </div>
+        </a>
 
-        <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <div class="filter-item3">
             <h3 class="filter-name">MATERIALS</h3>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <div class="filter-item4">
             <h3 class="filter-name">LOCATIONS</h3>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <div class="filter-item5">
             <h3 class="filter-name">APPLICATIONS</h3>
           </div>
         </div>
       </div>
     </section>
+
 
     <!--------------------------------------- offer section ------------------------>
     <section id="offer">
@@ -144,7 +218,7 @@
           <div class="col-md-3 col-sm-6">
             <div class="offer-item">
               <img class="offer-imgs" src="imgs/logo.png" alt="" />
-              <h4><a href="content.html">offer.com</a></h4>
+              <h4>offer.com</h4>
               <p>this is offer.coms defines</p>
             </div>
           </div>
@@ -244,11 +318,12 @@
     <section id="footer">
       <div class="footer">
         <div class="row">
-
           <div class="col-lg-6 colmd-6 col-sm-12">
             <div class="details">
               <span>Email:</span>
-              <a class="proxmail" href="mailto:info@proxador.com">info@proxador.com</a>
+              <a class="proxmail" href="mailto:info@proxador.com"
+                >info@proxador.com</a
+              >
               <p>+98 935 406 44 58</p>
               <div class="socialmedias">
                 <!-- Facebook -->
@@ -274,6 +349,10 @@
                 <!-- Github -->
                 <a class="social-item" href="#!"
                   ><i class="fab fa-github"></i
+                ></a>
+                <!-- Youtube -->
+                <a class="social-item" href="#!"
+                  ><i class="fab fa-youtube"></i
                 ></a>
               </div>
             </div>
@@ -305,5 +384,7 @@
         </div>
       </div>
     </section>
+
+    <script src="indexjquery.js"></script>
   </body>
 </html>
