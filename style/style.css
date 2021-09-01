@@ -571,6 +571,10 @@ input[type="checkbox"]:checked ~ i {
   margin: 1% auto;
   /* background-color: #edf5e7; */
 }
+.offer-item:hover{
+  transform: scale(1.05);
+  transition: 0.2s;
+}
 .offer-item-img {
   position: relative;
   width: 40%;
@@ -615,7 +619,7 @@ input[type="checkbox"]:checked ~ i {
 }
 .main-rate {
   font-size: 35px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /******************************************** footer section **************************/
