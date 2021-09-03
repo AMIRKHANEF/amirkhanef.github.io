@@ -70,16 +70,13 @@ li.nav-link {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 50px;
   background-color: #aec5eb;
-}
-
-.nav-search-col {
-  display: inline;
+  display: flex;
+  flex-direction: row;
 }
 
 .searchbox {
-  position: relative;
-  margin-left: 3%;
-  padding-right: 13%;
+  width: 85%;
+  margin-left: 10px;
   border: none;
   background-color: transparent;
 }
@@ -89,7 +86,7 @@ input[type="text"]:focus {
 }
 
 .search-btn {
-  padding-left: 0%;
+  width: 15%;
   background-color: transparent;
   border: none;
   font-size: 1.3rem;
